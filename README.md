@@ -5,4 +5,4 @@
   Receives a string (formed by numeric characters)<br>and return a respective number on success,<br> or -1 on error<br>
 example<br>
 int var = stoi((char *)string)<br>
-OBS the string must have at most 8 characters<br>
+OBS the string must be at most 2147483648 (long long variable)<br>
