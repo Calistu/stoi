@@ -17,8 +17,8 @@ int func(int vet)
 }
 int stoi(char str_numb[8])
 {
-//	if(strlen(str_numb)>8)
-//		return -1;
+	if(strlen(str_numb)>8)
+		return -1;
 	unsigned long long result=0;
 	int ascii,numb=0,vet=0,len,err=0;
 	len = (strlen(str_numb));
