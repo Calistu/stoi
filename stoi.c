@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 /*Calistu 2019
- * stoi.h - numeric string to int
+ * stoi.c - numeric string to int
  * this function changes
  * numeric strings in unsigned int
  * string max size: 2147483648 -> (long long variable size)
