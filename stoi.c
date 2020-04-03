@@ -17,11 +17,7 @@ int func(int vet)
 }
 int stoi(char *str_numb)
 {
-<<<<<<< HEAD:stoi.h
 	if((strlen(str_numb)>8)||str_numb==NULL)
-=======
-	if(strlen(str_numb)>8)
->>>>>>> 27ff407ee0633f217780e055a94e563f5a37c5f1:stoi.c
 		return -1;
 	unsigned long long result=0;
 	int ascii,numb=0,vet=0,len,err=0;
