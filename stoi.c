@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <string.h>
 /*Calistu 2019
- * stoi.c - numeric string to int
- * this function changes
- * numeric strings in unsigned int
- * string max size: 2147483648 -> (long long variable size)
- * returns int num or -1 for error
+* stoi.c - numeric string to int
+* this function changes
+* numeric strings in unsigned int
+* string max size: 2147483648 -> (long long variable size)
+* returns int num or -1 for error
 */
+
+//returns
 int func(int vet)
 {
 	int cont;
@@ -15,13 +17,17 @@ int func(int vet)
 		result = result * 10;
 	return result;
 }
+
 int stoi(char *str_numb)
 {
+	unsigned long long result=0;
+	int ascii,numb=0,vet,len,err=0;
+
 	if((strlen(str_numb)>8)||str_numb==NULL)
 		return -1;
-	unsigned long long result=0;
-	int ascii,numb=0,vet=0,len,err=0;
-	len = (strlen(str_numb));
+
+	len = strlen(str_numb);
+
 	/* multiply the number to the exponence of your position */
 	for(vet=1;vet<=len;vet++)
 	{
@@ -36,12 +42,11 @@ int stoi(char *str_numb)
 				break;
 			}
 			numb++;
-			
+
 		}
+
 		if(err==1)
-		{
 			return -1;
-		}
 	}
 	return result;
 }
